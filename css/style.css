@@ -1,0 +1,204 @@
+/*
+*=global
+*/
+
+body {
+	background: #252525;
+	font-family: 'Open Sans', Arial;
+}
+/*
+typography
+*/
+
+h1, h2, h3, h4 {
+margin: 0px;
+color: #E0E0E0;
+font-weight: normal;
+margin-bottom: 10px;
+
+}
+
+
+/*
+*=border
+*/
+
+.border {
+	height: 50px;
+	width: auto;
+	background: url("../img/border.jpg");
+}
+
+/*
+*=header
+*/
+
+header {
+	width: 980px;
+	height: 123px;
+	margin: 0 auto;
+}
+
+
+
+/*
+*=contact
+*/
+
+
+.contact {
+	width: 860px;
+	margin: 0 auto;
+}
+
+/* name and job title */
+.contact h1, .contact p {
+	width: 460px;
+	float: left;
+	clear: both; /* Make sure the elements are under each other */
+}
+
+.contact h1 {
+	font-size: 61px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	padding-top: 40px;
+	padding-bottom: 5px;
+}
+
+.contact p {
+	font-family: arial;
+	font-size: 14px;
+	color: #969696;
+	padding-bottom: 1px;
+	letter-spacing: 2px;
+}
+
+/* Contact Bar */
+.contact ul {
+	height: 16px;
+	float: right;
+	margin-top: -36px;
+}
+
+.contact li, .contact li a {
+	font-family: arial;
+	font-size: 13px;
+	color: #9f9f9f;
+}
+
+.contact li {
+	float: left;
+	margin-left: 30px;
+	height: 16px;
+	background: no-repeat center left;
+}
+
+.contact li.vcard { background: url('../img/vcard_sprite.png') 0 0 no-repeat; }
+.contact li.vcard:hover { background-position: 0 -16px; }
+
+.contact li.phone { 
+	background: url('../img/phone_sprite.png') 0 0 no-repeat; 
+	padding-left: 25px;
+	line-height: 16px;
+}
+.contact li.phone:hover {
+	background-position: 0 -16px; 
+	color: #E0E0E0;
+}
+
+.contact li.mail { background: url('../img/mail_sprite.png') 0 0 no-repeat; }
+.contact li.mail:hover { background-position: 0 -16px; }
+
+.contact li a {
+	text-decoration: none;
+	padding-left: 25px;
+	line-height: 16px;
+}
+.contact li a:hover {
+	color: #e0e0e0;
+	text-decoration: underline;
+}
+
+/* NAV */
+
+.nav {
+	padding-top: 42px;
+	width: 860px;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.nav ul {
+	
+}
+
+.nav li {
+	display: inline-block;
+	height: 430px;
+	width: 190px;
+	margin: 0 10px;
+}
+
+.nav li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.nav li.about a { 
+	background: url('../img/blue.jpg') no-repeat; 
+}
+
+.nav li.portfolio a { 
+	background: url('../img/lime.jpg') no-repeat; 
+}
+
+.nav li.resume a { 
+	background: url('../img/yellow.jpg') no-repeat; 
+}
+
+.nav li.contactpage a { 
+	background: url('../img/orange.jpg') no-repeat; 
+}
+
+.nav li.about a:hover { 
+	background: url('../img/blue_hover.jpg') no-repeat; 
+}
+
+.nav li.portfolio a:hover { 
+	background: url('../img/lime_hover.jpg') no-repeat; 
+}
+
+.nav li.resume a:hover { 
+	background: url('../img/yellow_hover.jpg') no-repeat; 
+}
+
+.nav li.contactpage a:hover { 
+	background: url('../img/orange_hover.jpg') no-repeat; 
+}
+
+.nav p.info {
+	padding-top: 256px;
+	font-size: 24px;
+}
+
+.nav p.desc {
+	padding-top: 60px;
+	font-size: 14px;
+}
+
+.footer p {
+	width: 860px;
+	margin: 0 auto;
+	font-family: arial;
+	font-size: 14px;
+	color: #9f9f9f;
+}
+
+.footer a {
+	color: #FFF;
+}

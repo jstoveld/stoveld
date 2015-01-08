@@ -1,0 +1,763 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+    <head>
+
+        <title>Cascade - Personal vCard Template</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        
+        <link rel="stylesheet" type="text/css" href="style/jquery-ui/smoothness/jquery-ui.css"/> 
+        <link rel="stylesheet" type="text/css" href="style/base.css"/> 
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cuprum"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300"/>
+
+        <script type="text/javascript" src="script/jquery.min.js"></script>
+        <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="script/main.js"></script>
+
+    </head>
+    
+    <body>
+    
+        <div class="main clear-fix overflow-fix box-center">
+            
+            <div class="header clear-fix overflow-fix">
+                
+                <div class="layout-50-left">
+                    <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-logo"></a>
+                </div>
+                
+                <div class="layout-50-right">
+                    
+                    <ul class="no-list header-menu">
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-contact-us">Contact us</a></li>
+                        <li><a href="http://twitter.com/QuanticaLabs" class="header-menu-twitter"></a></li>
+                        <li><a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs" class="header-menu-envato"></a></li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="content">
+                
+                <div class="tabs">
+                    
+                    <ul>
+                        <li><a href="#tab-1">About</a></li>
+                        <li><a href="#tab-2">CSS</a></li>
+                        <li><a href="#tab-3">HTML</a></li>
+                        <li><a href="#tab-4">Javascript</a></li>
+                        <li><a href="#tab-5">Plugins</a></li>
+                        <li><a href="#tab-6">PSD</a></li>
+                        <li><a href="#tab-7">Fonts</a></li>
+                        <li><a href="#tab-8">Credits</a></li>
+                        <li><a href="#tab-9">Version history</a></li>
+						<li><a href="#tab-10">FAQ</a></li>
+						<li><a href="#tab-11">Support</a></li>
+                    </ul>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-1">
+                        
+                        <h1>About</h1>      
+                        
+                        <p>
+							Cascade is a minimalist personal vCard template based on four vertical menu tabs.
+							The first tab is a typical descriptive about page with slider, the second is a gallery with build-in lightbox,
+							next tab is a personal info page and the last tab is the contact page with working form.
+							Included PSD source file allows you to customize this template to your needs.                       
+                        </p>
+						
+						<h3>Template features</h3>
+                        
+						<ul class="documentation">
+                            <li>jQuery Powered</li>
+                            <li>Build-in Lightbox</li>
+                            <li>Working Contact Form</li>
+                            <li>Support for back/next browser buttons</li>
+                            <li>Latest Tweets</li>
+                            <li>Font Face Fonts</li>
+                            <li>Valid XHTML Code</li>
+                            <li>PSD Source Included</li>
+                            <li>Documentation Included</li>
+						</ul>	
+                        
+                    </div>
+                    
+                    <!-- #### -->
+
+                    <div id="tab-2">
+                        
+                        <h1>CSS styles</h1>
+
+						<p>The project uses the following cascade of template styles (in order):</p>
+						
+						<table>
+							<tr>
+								<th>Filename</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td class="name">nivo-slider.css</td>
+								<td>default styles for slider</td>
+							</tr>
+							<tr>
+								<td class="name">jquery.qtip.css</td>
+								<td>default styles for tooltips (overwritten in <span class="name">base.css</span>)</td>
+							</tr>
+							<tr>
+								<td class="name">jquery.captify.css</td>
+								<td>default styles for image labels (overwritten in <span class="name">base.css</span>)</td>
+							</tr>
+							<tr>
+								<td class="name">jquery.jScrollPane.css</td>
+								<td>default styles for scrollbars (overwritten in <span class="name">base.css</span>)</td>
+							</tr>
+							<tr>
+								<td class="name">fancybox/jquery.fancybox.css</td>
+								<td>default styles for fancybox</td>
+							</tr>
+							<tr>
+								<td class="name">base.css</td>
+								<td>base styles for the entire project</td>
+							</tr>
+							<tr>
+								<td class="name">page.css</td>
+								<td>styles for subpages</td>
+							</tr>
+						</table>
+					
+						<p>All CSS files are located in <span class="name">/style</span> directory.</p>
+
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-3">
+                        
+                        <h1>HTML structure</h1>
+                        
+                        <p>
+                            HTML page of this project is divided by three section: header, content (main section) and footer.<br/>
+                            When the box is opened, script (<span class="name">cascade.js</span>) loads the page specified by the hash of clicked box.<br/> 
+                            For example, if you clicked <span class="name">About</span> box, the page <span class="name">/page/page-1.html</span> is loaded. 
+                            All subpages are stored in <span class="name">/page</span> directory.<br/><br/> 
+                            After the page is loaded the script <span class="name">page/script/main.js</span> is running.
+                            Additionally for each page can be loaded locally JS script from path <span class="name">page/script</span>.<br/><br/>
+                            Configuration that specifies which files have to be loaded is located in the file <span class="name">config.php</span>.
+                        </p>
+                        
+                        <br/>   
+						<h3>Header</h3>                        
+<pre class="code">
+&lt;!-- Header --&gt;
+&lt;div class=&quot;header main box-center clear-fix&quot;&gt;
+
+	&lt;div class=&quot;layout-4060 clear-fix overflow-fix&quot;&gt;
+
+		&lt;div class=&quot;layout-4060-left&quot;&gt;					
+			&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('main'); ?&gt;&quot; class=&quot;header-logo-link&quot;&gt;&lt;/a&gt; 
+			&lt;h1&gt;Anna Brown&lt;/h1&gt;
+			&lt;h5&gt;professional photographer &amp;amp; web developer&lt;/h5&gt;					
+		&lt;/div&gt;
+
+		&lt;div class=&quot;layout-4060-right&quot;&gt;
+			&lt;ul class=&quot;no-list header-menu&quot;&gt;
+				&lt;li class=&quot;header-menu-download&quot;&gt;&lt;a href=&quot;#&quot;&gt;Download my vCard&lt;/a&gt;&lt;/li&gt;
+				&lt;li class=&quot;header-menu-phone&quot;&gt;1.800.353.252&lt;/li&gt;
+				&lt;li class=&quot;header-menu-mail&quot;&gt;&lt;a href=&quot;#&quot;&gt;anna.brown@mail.com&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;			
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- /Header --&gt;	
+</pre>
+                        
+                        <br/>
+                        <h3>Content</h3>                        
+                        
+<pre class="code">
+&lt;!-- Content --&gt;
+&lt;div class=&quot;content main box-center&quot;&gt;
+
+	&lt;!-- Cascade --&gt;
+	&lt;div class=&quot;cascade preloader&quot;&gt;
+
+		&lt;!-- Box menu --&gt;
+		&lt;ul class=&quot;cascade-menu overflow-fix&quot;&gt;
+			&lt;li id=&quot;tab-1&quot; class=&quot;blue-info&quot;&gt;
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('about'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;About&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;About Me&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li id=&quot;tab-2&quot; class=&quot;lime-camera&quot;&gt;
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('portfolio'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;Portfolio&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;My Works&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li id=&quot;tab-3&quot; class=&quot;yellow-document&quot;&gt;		
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('resume'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;Resume&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;Personal Profile&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li id=&quot;tab-4&quot; class=&quot;green-people&quot;&gt;		
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('interests'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;My Interests&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;Free time&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li id=&quot;tab-5&quot; class=&quot;red-mail&quot;&gt;		
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('contact'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;Contact&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;Get In Touch&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- /Box menu --&gt;
+
+		&lt;!-- Window --&gt;
+		&lt;div class=&quot;cascade-window&quot;&gt;
+
+			&lt;!-- Close bar --&gt;
+			&lt;div class=&quot;cascade-window-close-bar&quot;&gt;
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('main'); ?&gt;&quot;&gt;&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!-- /Close bar --&gt;
+
+			&lt;!-- Page content --&gt;
+			&lt;div class=&quot;cascade-window-content&quot;&gt;
+				&lt;?php $Cascade-&gt;loadFile(); ?&gt;
+			&lt;/div&gt;
+			&lt;!-- /Page content --&gt;
+
+			&lt;!-- Footer --&gt;
+			&lt;div class=&quot;cascade-window-footer&quot;&gt;&lt;/div&gt;
+			&lt;!-- /Footer --&gt;
+
+		&lt;/div&gt;
+		&lt;!-- /Window --&gt;
+
+		&lt;!-- Navigation --&gt;
+		&lt;a href=&quot;#&quot; class=&quot;cascade-navigation cascade-navigation-prev&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;cascade-navigation cascade-navigation-next&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;cascade-navigation cascade-navigation-slider-prev&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot; class=&quot;cascade-navigation cascade-navigation-slider-next&quot;&gt;&lt;/a&gt;
+		&lt;!-- /Navigation --&gt;
+
+	&lt;/div&gt;
+	&lt;!-- /Cascade --&gt;
+
+&lt;/div&gt;
+&lt;!-- /Content --&gt;
+</pre>
+                        <br/>
+                        <h3>Footer</h3>                        
+                        
+<pre class="code">
+&lt;!-- Footer --&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+	&lt;hr class=&quot;footer-line&quot; /&gt;
+
+	&lt;div class=&quot;main box-center layout-7030 clear-fix overflow-fix&quot;&gt;
+
+		&lt;!-- Latest tweets --&gt;
+		&lt;div class=&quot;layout-7030-left latest-tweets&quot;&gt;
+			&lt;div id=&quot;latest-tweets&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- /Latest tweets --&gt;
+
+		&lt;!-- Social icons --&gt;
+		&lt;div class=&quot;layout-7030-right&quot;&gt;
+
+			&lt;ul class=&quot;no-list social-list&quot;&gt;
+				&lt;li&gt;Connect&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-rss&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-google&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;social-skype&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+
+		&lt;/div&gt;
+		&lt;!-- /Social icons --&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;!-- /Footer --&gt;
+</pre>
+                        
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-4">
+                        
+                        <h1>Javascript files</h1>
+						<h3>Plugins and library</h3>
+						
+						<table>
+							<tr>
+								<th style="width:30%">Plugin/Library name</th>
+								<th style="width:30%">Description</th>
+								<th style="width:40%">Homepage</th>
+							</tr>
+							<tr>
+								<td class="name">JavaScript Linkify v0.3 (min)</td>
+								<td></td>
+								<td><a href="http://benalman.com/projects/javascript-linkify/">http://benalman.com/projects/javascript-linkify/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery v1.7.2 (min)</td>
+								<td>jQuery JavaScript Library</td>
+								<td><a href="http://jquery.com/">http://jquery.com/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery Easing v1.3</td>
+								<td></td>
+								<td><a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></td>
+							</tr>
+							<tr>
+								<td class="name">Isotope v1.5.19</td>
+								<td>An exquisite jQuery plugin for magical layouts</td>
+								<td><a href="http://isotope.metafizzy.co">http://isotope.metafizzy.co</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery Captify v1.1.3</td>
+								<td>jQuery Captify Plugin</td>
+								<td><a href="http://thirdroute.com/projects/captify/">http://thirdroute.com/projects/captify/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery blockUI v2.39</td>
+								<td>jQuery blockUI plugin</td>
+								<td><a href="http://malsup.com/jquery/block/">http://malsup.com/jquery/block/</a></td>
+							</tr>
+							<tr>
+								<td class="name">qTip2 (min)</td>
+								<td>Pretty powerful tooltips</td>
+								<td><a href="http://craigsworks.com/projects/qtip2/">http://craigsworks.com/projects/qtip2/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery FancyBox v1.3.4</td>
+								<td>Simple and fancy lightbox alternative</td>
+								<td><a href="http://fancybox.net/">http://fancybox.net/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery BBQ v1.2.1 (min)</td>
+								<td>Back Button &amp; Query Library</td>
+								<td><a href="http://benalman.com/projects/jquery-bbq-plugin/">http://benalman.com/projects/jquery-bbq-plugin/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery MouseWheel v3.0.6</td>
+								<td></td>
+								<td><a href="http://brandonaaron.net/code/mousewheel/demos">http://brandonaaron.net/code/mousewheel/demos</a></td>
+							</tr>
+							<tr>
+								<td class="name">jScrollPane v2.0.0 (min)</td>
+								<td></td>
+								<td><a href="http://jscrollpane.kelvinluck.com/">http://jscrollpane.kelvinluck.com/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery Nivo Slider v3.1 (pack)</td>
+								<td></td>
+								<td><a href="http://nivo.dev7studios.com/">http://nivo.dev7studios.com/</a></td>
+							</tr>
+							<tr>
+								<td class="name">jQuery carouFredSel v5.6.2 (pack)</td>
+								<td></td>
+								<td><a href="http://caroufredsel.frebsite.nl">http://caroufredsel.frebsite.nl</a></td>
+							</tr>
+						</table>
+						
+						<br/>
+						
+						<h3>Other files</h3>
+						
+						<table>
+							<tr>
+								<th style="width:30%">Script name</th>
+								<th style="width:70%">Description</th>
+							</tr>
+							<tr>
+								<td class="name">script.js</td>
+								<td>script contains a few simple functions used in this project</td>
+							</tr>
+							<tr>
+								<td class="name">cascade.js</td>
+								<td>script contains plugins used to handle animations</td>
+							</tr>
+						</table>
+
+                    </div>
+                 
+                    <!-- #### -->
+                    
+                    <div id="tab-5">
+						
+                        <h1>Plugins</h1>
+                        <h3>Contact form</h3>
+						<p>
+							This project includes a contact form ready for use.<br/> 
+							All you need is to configure some constants located in file <span class="name">plugin/contact-form/config.php</span>:
+						</p>
+
+						<h4>Required data</h4>
+						<table>
+							<tr>
+								<th style="width:50%">Constant</th>
+								<th style="width:50%">Description</th>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_TO_NAME</td>
+								<td>name of recipient eg. &quot;My Company&quot;</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_TO_EMAIL</td>
+								<td>e-mail address of recipent eg. &quot;mycompany@gmail.com&quot;</td>
+							</tr>							
+						</table>
+						
+						<br/>
+						<h4>Optional SMTP settings</h4>
+						<table>
+							<tr>
+								<th style="width:50%">Constant</th>
+								<th style="width:50%">Description</th>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SMTP_PORT</td>
+								<td>your SMTP port eg. &quot;587&quot;</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SMTP_HOST</td>
+								<td>your SMTP host eg. &quot;smtp.gmail.com&quot;</td>
+							</tr>	
+							<tr>
+								<td class="name">CONTACT_FORM_SMTP_USER</td>
+								<td>login to your e-mail account eg. &quot;mycompany&quot;</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SMTP_PASSWORD</td>
+								<td>password to your e-mail account</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SMTP_SECURE</td>
+								<td>secure connection protocol: &quot;SSL&quot; or &quot;TLS&quot;</td>
+							</tr>
+						</table>
+						
+						<br/>
+						<h4>Texts and messages</h4>
+						<table>
+							<tr>
+								<th style="width:50%">Constant</th>
+								<th style="width:50%">Description</th>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SUBJECT</td>
+								<td>subject of e-mail message</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_MSG_INVALID_DATA_NAME</td>
+								<td>text displayed when name is empty</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_MSG_INVALID_DATA_MAIL</td>
+								<td>text displayed when e-mail address is invalid</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_MSG_INVALID_DATA_MESSAGE</td>
+								<td>text displayed when message field is empty</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_LABEL_DATA_NAME</td>
+								<td>label for name field</td>
+							</tr>	
+							<tr>
+								<td class="name">CONTACT_FORM_LABEL_DATA_MAIL</td>
+								<td>label for e-mail field</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_LABEL_DATA_MESSAGE</td>
+								<td>label for message field</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SEND_MSG_OK</td>
+								<td>text displayed when e-mail was sent successfully</td>
+							</tr>
+							<tr>
+								<td class="name">CONTACT_FORM_SEND_MSG_ERROR</td>
+								<td>text displayed when e-mail cannot be sent</td>
+							</tr>
+						</table>
+
+                    </div>
+                    
+                    <!-- #### -->
+
+                    <div id="tab-6">
+                        <h1>PSD files</h1>
+                        <p>
+							Template contains layered and organized PSD source file - <span class="name">cascade.psd</span> with predefined slices.
+							Template contains additional <span class="name">tabs.psd</span> file with separated tabs images in all colors and styles with predefined slices for easier tabs modifications.
+						</p>
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-7">
+                        <h1>Fonts used</h1>
+						<ul class="documentation">
+							<li><span class="name">Open Sans</span> By Steve Matteson, Apache License, version 2.0<br/><a href="http://www.google.com/webfonts/specimen/Open+Sans">http://www.google.com/webfonts/specimen/Open+Sans</a>,</li>
+							<li><span class="name">Arial</span> - default system font.</li>
+						</ul>
+                    </div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-8">
+                        <h1>Credits</h1>
+						<h3>Icons</h3>
+						<p>All icons by QuanticaLabs. Icons are an integral part of this template, please do not use it separately for other purposes.</p>
+						<h3>Images</h3>
+						<p>All images under Creative Commons Attribution 2.0 Generic for commercial use.<br/>
+						No Derivative Works or Share-Alike conditions waived by permission of copyright holders.</p>
+						<ul class="documentation">
+							<li><span class="name">Sample Image: Rhiannon</span> By apdk<br/><a href="http://www.flickr.com/photos/62337512@N00/3399346389/in/photostream/">http://www.flickr.com/photos/62337512@N00/3399346389/in/photostream/</a>,</li>
+							<li><span class="name">Sample Image: Rhiannon</span> By apdk<br/><a href="http://www.flickr.com/photos/62337512@N00/3400158730/in/photostream/">http://www.flickr.com/photos/62337512@N00/3400158730/in/photostream/</a>,</li>
+							<li><span class="name">Sample Image: Rhiannon</span> By apdk<br/><a href="http://www.flickr.com/photos/62337512@N00/3399355423/sizes/m/in/photostream/">http://www.flickr.com/photos/62337512@N00/3399355423/sizes/m/in/photostream/</a>,</li>
+						</ul>
+                    </div>
+					
+					<!-- #### -->
+					
+                    <div id="tab-9">
+                        <h1>Version history</h1>
+						<p><b>13.10.2012</b>, ver. 2.5.1</p>
+						<ul class="documentation">
+							<li>Fixed problem with Twitter feeds,</li>
+							<li>Fixed problem with contact form,</li>
+							<li>Added new video samples,</li>
+							<li>Added new informations to documentation.</li>
+						</ul>
+						<p><b>13.08.2012</b>, ver. 2.5</p>
+						<ul class="documentation">
+							<li>Added new tab (with 6 icons),</li>
+							<li>Added carousel for tabs,</li>
+							<li>Added preloader for images,</li>
+							<li>Added reset button to contact form,</li>
+							<li>Added support for meta tags (keywords and description),</li>
+							<li>Added filtering to portfolio (based on isotope jQuery plugin),</li>
+							<li>Changed structure of hashlinks (HTTP 403 error in IE on some servers).</li>
+						</ul>
+						<p><b>02.04.2012</b>, ver. 2.1</p>
+						<ul class="documentation">
+							<li>Added SEO support for links,</li>
+							<li>Fixed small bug in <span class="name">/script/cascade.js</span>.</li>
+						</ul>
+						<p><b>11 March 2012</b>, ver. 2.0</p>
+						<ul class="documentation">
+							<li>Added support for back/next browser buttons,</li>
+							<li>Added support for youtube and vimeo videos,</li>
+							<li>Added preloader on page loads,</li>
+							<li>Added <span class="name">jquery.ba-bqq.min.js</span> plugin,</li>
+							<li>Added simple jquery animation to the skills list,</li>
+							<li>Added new images for tabs (8 colors x 10 background images + 4 sample photos),</li>
+							<li>Added 9 new background images (10 backgrounds included on the project),</li>
+							<li>Added 5 new small social icons (10 icons of this type included on the project),</li>
+							<li>Added 8 new big social icons (10 icons of this type included on the project),</li>
+							<li>Changing HTML/CSS structure of <span class="name">#cascade-menu</span> menu,</li>
+							<li>Added new options for tabs (open at start etc.),</li>
+							<li>Added configuration for tabs,</li>
+							<li>Added style switcher,</li>
+							<li>Added some JS improvements,</li>
+							<li>Added some CSS improvements.</li>
+						</ul>
+						<p><b>08.12.2011</b>, ver. 1.2</p>
+						<ul class="documentation">
+							<li>Added clickable links to tweets,</li>
+							<li>Changing method of sending request from POST to GET,</li>
+							<li>Fixed bug with Google Maps in IE,</li>
+							<li>Added some CSS improvements.</li>
+						</ul>
+						<p><b>13.11.2011</b>, ver. 1.1</p>
+						<ul class="documentation">
+							<li>Small bug fixed in file <span class="name">/script/jquery.cascade.js</span>,</li>
+						</ul>
+						<p><b>09.11.2011</b>, ver. 1.0, First release</p>
+					</div>
+					
+					<!-- #### -->
+					
+					<div id="tab-10">
+						
+						<h1>FAQ</h1>
+						
+						<h3>Installing template</h3> 
+						<p>
+							To install this template upload all files from <span class="name">www</span> folder into HTTP server.<br/>
+							This template is based on AJAX requests (and PHP) and it can&#039;t work locally (without HTTP server).
+						</p>
+						
+						<h3>Twitter settings</h3> 
+						<p>
+							Open file <span class="name">config.php</span> and set two values: <span class="name">twitter.name</span> (your Twitter nickname) and
+							<span class="name">twitter.count</span> (number of tweets which should be displayed) in <span class="name">$options</span> array: 
+						</p>
+						
+<pre class="code">
+$options=array
+(
+	....
+	<span class="important">'twitter'</span>			=>	array
+	(
+		'name'			=>	'quanticalabs',
+		'count'			=>	10
+	)
+);	
+</pre>
+						<br/>
+						
+						<h3>Creating new page</h3>
+						<p>Follow in these steps:</p>
+						<p>1. Open file <span class="name">config.php</span> and add new entry into <span class="name">$page</span> array.</p>
+<pre class="code">
+$page=array
+(
+	....
+	<span class="important">'new_page'</span>			=>	array				// hashtag of the page
+	(
+		'js'			=>	'new_page.js',			// JS file name which will be loaded when the page will be open
+		'tab'			=>	'tab-6',			// unique tab ID
+		'html'			=>	'new_page.html',		// HTML file name (content of the page)
+		'main'			=>	1,				// this options determines if tab should be visible
+		'title'			=>	$title.' - New Page'		// page title
+	)
+);
+</pre>		
+						<p>2. Open file <span class="name">index.php</span> and add new tab:</p>
+<pre class="code">
+&lt;!-- Content --&gt;
+&lt;div class=&quot;content main box-center&quot;&gt;
+
+	&lt;!-- Cascade --&gt;
+	&lt;div class=&quot;cascade preloader&quot;&gt;
+
+		&lt;!-- Box menu --&gt;
+		&lt;ul class=&quot;cascade-menu overflow-fix&quot;&gt;
+
+			...
+			<span class="important">&lt;!-- New tab --&gt;</span>
+			&lt;li id=&quot;tab-6&quot; class=&quot;blue-info&quot;&gt;
+				&lt;a href=&quot;&lt;?php $Cascade-&gt;_getURL('new_page'); ?&gt;&quot;&gt;
+					&lt;span class=&quot;title&quot;&gt;New page&lt;/span&gt;
+					&lt;span class=&quot;subtitle&quot;&gt;My new page&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt
+			<span class="important">&lt;!-- /New tab --&gt;</span>
+			...
+
+		...
+
+	...
+
+...
+</pre>								
+						<p>3. Create all necessary files: <span class="name">/page/new_page.html</span> and <span class="name">/page/script/new_page.js</span>.</p>
+						
+						<h3>Setting meta tags and page title</h3> 
+						<p>You can set these data in two ways: for all pages and/or for each page separately:</p>
+						<p>
+							1. To set meta tags and tittle for all pages open file <span class="name">config.php</span> and set values: 
+							<span class="name">title</span>,<span class="name">meta.keywords</span>,<span class="name">meta.description</span> in
+							<span class="name">$options</span> array.
+						</p>
+						<p>
+							2. To set meta tags and tittle for single page open file <span class="name">config.php</span> and set values: 
+							<span class="name">title</span>,<span class="name">meta.keywords</span>,<span class="name">meta.description</span> in
+							<span class="name">$page</span> for selected page.
+						</p>
+						
+						<h3>Changing Google Maps coordinates</h3>
+						<p>
+							To change Google Maps coordinates in contact page open file <span class="name">/page/script/main.js</span> 
+							and change values for <span class="name">coordinate</span> variable which you can find in 
+							<span class="name">Google Maps</span> section.
+						</p>
+								
+                        <h3>Changing tab background</h3> 
+                        <p>To change the background tab, use one of the following combinations (color + background image):</p>
+                        <p>
+                            Available colors: <i>red, blue, lime, green, yellow, orange, purple, turquoise.</i><br/>
+                            Available background images: <i>info, mail, tick, arrow, people, basket, camera, document, briefcase, lightbulb, image-1, image-2, image-3, image-4.</i>
+                        </p> 
+                        <p>
+                            For example: if you want to change the tab with id <span class="name">tab-2</span> to <span class="name">red, lightbulb</span> 
+                            please change class name of <span class="name">li</span> - new class name is a combination of names: the color 
+                            and background image separated by dash:
+                        </p>
+<pre class="code">
+&lt;li id=&quot;tab-2&quot; class=&quot;<span class="important">red-lightbulb</span>&quot;&gt;
+    &lt;a href=&quot&lt;?php $Cascade->_getURL(&#039;portfolio&#039;); ?&gt;&quot;&gt;
+        &lt;span class=&quot;title&quot;&gt;Portfolio&lt;/span&gt;
+        &lt;span class=&quot;subtitle&quot;&gt;My Works&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/li&gt;
+</pre>
+						
+                        <br/>
+                        <h3>Changing header background</h3> 						
+						<p>To change the header of the page, use one of the following classes:</p>
+                        <p>Available classes: <i>background-carbon (default), background-grid, background-mesh, background-wood, background-wood-2, background-wood-3, background-tiles, background-fibers, background-stripes, background-sandpaper.</i> For example:</p>
+<pre class="code">
+&lt;body class=&quot;<span class="important">background-wood</span>&quot;&gt;
+</pre>			
+						
+						<br/>
+                        <h3>Changing social icons</h3> 						
+						<p>
+							This project includes two type of social icons: small icons (used in footer) and big icons (used at about page). To change it please use one of available classes.<br/>
+							Available classes: <i>social-rss, social-xing, social-skype, social-flickr, social-google, social-twitter, social-facebook, social-linkedin, social-wordpress, social-soundcloud.</i>
+						</p>
+						
+					</div>
+                    
+                    <!-- #### -->
+                    
+                    <div id="tab-11">
+                        <h1>Support</h1>
+						Support for all our items is conducted through our <a href="http://support.quanticalabs.com/forum">Support Forum</a>.<br/> 
+						Please register an account and search the forum or create a new topic, we&#039;ll answer as soon as possible.<br/><br/>
+						We&#039;re in GMT +1 and we aim to answer all questions within <b>24 hours</b> (Monday – Friday). In some cases the waiting time can be extended to <b>48 hours</b>.<br/>
+						Support requests sent during weekends or public holidays will be processed on next Monday or the next business day.
+                   </div>
+                
+                </div>                
+                
+            </div>
+            
+            <div class="footer">
+                <a href="http://codecanyon.net/user/QuanticaLabs?ref=quanticalabs">&copy; 2012 QuanticaLabs</a>
+            </div>
+            
+        </div>
+        
+        <div>
+        
+            <input type="hidden" id="open-tabs" value="1" />
+        
+        </div>
+        
+    </body>
+    
+</html>
