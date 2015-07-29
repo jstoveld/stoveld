@@ -30,6 +30,16 @@ margin-bottom: 10px;
 }
 
 /*
+*=border
+*/
+
+.border2 {
+	height: 25px;
+	width: auto;
+	background: url("../img/border.jpg");
+}
+
+/*
 *=header
 */
 
